@@ -117,6 +117,7 @@ header nav {
   font-size: 1.1rem;
   padding: 0.8rem 1.4rem;
   align-self: center;
+  margin-bottom: 2rem;
 }
 
 #main-content #product-image {
@@ -137,6 +138,7 @@ header nav {
 #image-picker ul {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 #image-picker li {
@@ -179,4 +181,36 @@ header nav {
 }
 .selected {
   outline: 2px solid #43a1ff;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #navbar li {
+    display: none;
+  }
+
+  #navbar #logo {
+    display: flex;
+  }
+
+  #bottom-header__inner__links a {
+    display: none;
+  }
+
+  #bottom-header__inner__links .btn {
+    display: flex;
+  }
+
+  #main-content {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  #main-content #subtitle {
+    font-size: 3rem;
+  }
+
+  #image-picker ul {
+    flex-wrap: wrap;
+  }
 }
